@@ -1,7 +1,7 @@
-D:\finalProject\Roominfo\src\main\java\hotelmanage\Application.java
-D:\finalProject\Roominfo\src\main\java\hotelmanage\RoomInfoRepository.java
-D:\finalProject\Roominfo\src\main\java\hotelmanage\PolicyHandler.java
-D:\finalProject\Roominfo\src\main\java\hotelmanage\config\kafka\KafkaProcessor.java
-D:\finalProject\Roominfo\src\main\java\hotelmanage\RoomConditionChanged.java
-D:\finalProject\Roominfo\src\main\java\hotelmanage\AbstractEvent.java
-D:\finalProject\Roominfo\src\main\java\hotelmanage\RoomInfo.java
+D:\accommodationMgt\Notice\src\main\java\accommodation\AbstractEvent.java
+D:\accommodationMgt\Notice\src\main\java\accommodation\Application.java
+D:\accommodationMgt\Notice\src\main\java\accommodation\RoomConditionChanged.java
+D:\accommodationMgt\Notice\src\main\java\accommodation\RoomInfoRepository.java
+D:\accommodationMgt\Notice\src\main\java\accommodation\config\kafka\KafkaProcessor.java
+D:\accommodationMgt\Notice\src\main\java\accommodation\RoomInfo.java
+D:\accommodationMgt\Notice\src\main\java\accommodation\PolicyHandler.java

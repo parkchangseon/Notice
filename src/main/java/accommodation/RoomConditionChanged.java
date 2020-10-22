@@ -1,19 +1,25 @@
-package hotelmanage;
+package accommodation;
 
-import javax.persistence.*;
+public class RoomConditionChanged extends AbstractEvent {
 
-@Entity
-@Table(name="RoomInfo_table")
-public class RoomInfo {
-
-    @Id @GeneratedValue
+    //    private Long id;
     private Integer roomNumber;
-    private String roomName;
-    private Integer reserveNo;
-    private Integer customerId;
-    private String reserveStatus;
     private String roomStatus;
+    private String roomName;
+//    private Integer roomScore;
+//    private Integer roomScoreCnt;
 
+    public RoomConditionChanged(){
+        super();
+    }
+
+    //    public Long getId() {
+//        return id;
+//    }
+//
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
     public Integer getRoomNumber() {
         return roomNumber;
     }
@@ -22,6 +28,7 @@ public class RoomInfo {
         this.roomNumber = roomNumber;
     }
     public String getRoomStatus() {
+        System.out.println("RoomInfo에 있는 getRoomStatus");
         return roomStatus;
     }
 
@@ -37,30 +44,6 @@ public class RoomInfo {
         this.roomName = roomName;
     }
 
-    public Integer getReserveNo() {
-        return reserveNo;
-    }
-
-    public void setReserveNo(Integer reserveNo) {
-        this.reserveNo = reserveNo;
-    }
-
-    public Integer getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(Integer customerId) {
-        this.customerId = customerId;
-    }
-
-    public String getReserveStatus() {
-        return reserveStatus;
-    }
-
-    public void setReserveStatus(String reserveStatus) {
-        this.reserveStatus = reserveStatus;
-    }
-
     /*public Integer getRoomScore() {
         return roomScore;
     }
@@ -73,5 +56,4 @@ public class RoomInfo {
     public void setRoomScoreCnt(Integer roomScoreCnt) {
         this.roomScoreCnt = roomScoreCnt;
     }*/
-
 }
