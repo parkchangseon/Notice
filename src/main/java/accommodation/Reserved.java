@@ -7,17 +7,7 @@ public class Reserved extends AbstractEvent {
     private Integer customerId;
     private String reserveStatus;
     private Integer roomNo;
-
-    public Integer getReservePrice() {
-        return ReservePrice;
-    }
-
-    public void setReservePrice(Integer ReservePrice) {
-        ReservePrice = ReservePrice;
-    }
-
     private Integer ReservePrice;
-
     public Reserved(){
         super();
     }
@@ -29,6 +19,7 @@ public class Reserved extends AbstractEvent {
     public void setReserveNo(Integer reserveNo) {
         this.reserveNo = reserveNo;
     }
+
     public String getCustomerName() {
         return customerName;
     }
@@ -36,6 +27,7 @@ public class Reserved extends AbstractEvent {
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
+
     public Integer getCustomerId() {
         return customerId;
     }
@@ -43,6 +35,7 @@ public class Reserved extends AbstractEvent {
     public void setCustomerId(Integer customerId) {
         this.customerId = customerId;
     }
+
     public String getReserveStatus() {
         return reserveStatus;
     }
@@ -50,11 +43,20 @@ public class Reserved extends AbstractEvent {
     public void setReserveStatus(String reserveStatus) {
         this.reserveStatus = reserveStatus;
     }
+
     public Integer getRoomNo() {
         return roomNo;
     }
 
     public void setRoomNo(Integer roomNo) {
         this.roomNo = roomNo;
+    }
+
+    public Integer getReservePrice() {
+        return ReservePrice;
+    }
+
+    public void setReservePrice(Integer reservePrice) {
+        ReservePrice = reservePrice;
     }
 }

@@ -24,7 +24,7 @@ public class PolicyHandler{
 
             // external message send
             System.out.println("##### ");
-            System.out.println("##### external message send : " + roomConditionChanged.toJson());
+            System.out.println("##### external message send (room regist) : " + roomConditionChanged.toJson());
             System.out.println("##### ");
         }
     }
