@@ -16,11 +16,46 @@ public class PolicyHandler{
     public void wheneverSave_RoomInfo(@Payload RoomConditionChanged roomConditionChanged){
         if(roomConditionChanged.isMe()){
             System.out.println("##### listener 객실정보저장 : " + roomConditionChanged.toJson());
-            Notice roomInfo = new Notice();
+            RoomInfo roomInfo = new RoomInfo();
             roomInfo.setRoomNumber(roomConditionChanged.getRoomNumber());
             roomInfo.setRoomStatus(roomConditionChanged.getRoomStatus());
             roomInfo.setRoomName(roomConditionChanged.getRoomName());
             roomInfoRepository.save(roomInfo);
+
+            // external message send
+            System.out.println("##### ");
+            System.out.println("##### external message send : " + roomConditionChanged.toJson());
+            System.out.println("##### ");
+        }
+    }
+
+    @StreamListener(KafkaProcessor.INPUT)
+    public void wheneverSave_CheckOuted(@Payload CheckedOut checkedOut){
+        if(checkedOut.isMe()){
+            // external message send
+            System.out.println("##### ");
+            System.out.println("##### external message send (checkout) : " + checkedOut.toJson());
+            System.out.println("##### ");
+        }
+    }
+
+    @StreamListener(KafkaProcessor.INPUT)
+    public void wheneverSave_PaymentCompleted(@Payload PaymentCompleted paymentCompleted){
+        if(paymentCompleted.isMe()){
+            // external message send
+            System.out.println("##### ");
+            System.out.println("##### external message send (payment) : " + paymentCompleted.toJson());
+            System.out.println("##### ");
+        }
+    }
+
+    @StreamListener(KafkaProcessor.INPUT)
+    public void wheneverSave_Reserved(@Payload Reserved reserved) {
+        if (reserved.isMe()) {
+            // external message send
+            System.out.println("##### ");
+            System.out.println("##### external message send (reserved) : " + reserved.toJson());
+            System.out.println("##### ");
         }
     }
 }
