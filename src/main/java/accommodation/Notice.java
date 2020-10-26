@@ -60,18 +60,4 @@ public class Notice {
     public void setReserveStatus(String reserveStatus) {
         this.reserveStatus = reserveStatus;
     }
-
-    /*public Integer getRoomScore() {
-        return roomScore;
-    }
-    public void setRoomScore(Integer roomScore) {
-        this.roomScore = roomScore;
-    }
-    public Integer getRoomScoreCnt() {
-        return roomScoreCnt;
-    }
-    public void setRoomScoreCnt(Integer roomScoreCnt) {
-        this.roomScoreCnt = roomScoreCnt;
-    }*/
-
 }
