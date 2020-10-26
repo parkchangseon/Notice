@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="RoomInfo_table")
-public class RoomInfo {
+public class Notice {
 
     @Id @GeneratedValue
     private Integer roomNumber;

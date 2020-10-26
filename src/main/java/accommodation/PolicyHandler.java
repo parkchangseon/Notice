@@ -16,7 +16,7 @@ public class PolicyHandler{
     public void wheneverSave_RoomInfo(@Payload RoomConditionChanged roomConditionChanged){
         if(roomConditionChanged.isMe()){
             System.out.println("##### listener 객실정보저장 : " + roomConditionChanged.toJson());
-            RoomInfo roomInfo = new RoomInfo();
+            Notice roomInfo = new Notice();
             roomInfo.setRoomNumber(roomConditionChanged.getRoomNumber());
             roomInfo.setRoomStatus(roomConditionChanged.getRoomStatus());
             roomInfo.setRoomName(roomConditionChanged.getRoomName());
