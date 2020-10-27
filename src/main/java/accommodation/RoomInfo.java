@@ -14,7 +14,7 @@ public class RoomInfo {
     private String reserveStatus;
     private String roomStatus;
 
-    // Getter & Setters
+    // Getter & Setters__
     public Integer getRoomNumber() {
         return roomNumber;
     }
