@@ -14,19 +14,13 @@ public class RoomInfo {
     private String reserveStatus;
     private String roomStatus;
 
+    // Getter & Setters
     public Integer getRoomNumber() {
         return roomNumber;
     }
 
     public void setRoomNumber(Integer roomNumber) {
         this.roomNumber = roomNumber;
-    }
-    public String getRoomStatus() {
-        return roomStatus;
-    }
-
-    public void setRoomStatus(String roomStatus) {
-        this.roomStatus = roomStatus;
     }
 
     public String getRoomName() {
@@ -59,5 +53,13 @@ public class RoomInfo {
 
     public void setReserveStatus(String reserveStatus) {
         this.reserveStatus = reserveStatus;
+    }
+
+    public String getRoomStatus() {
+        return roomStatus;
+    }
+
+    public void setRoomStatus(String roomStatus) {
+        this.roomStatus = roomStatus;
     }
 }
